@@ -1,0 +1,9 @@
+<h1>New Comment for the following post:</h1>
+<h3>"<%= @message.title %>"</h3>
+<br>
+<h4>Please type your comment below...</h4>
+<br>
+<%= simple_form_for([@message, @comment]) do |f| %>
+    <%= f.input :content, label: "Comment" %>
+    <%= f.button :submit %>
+<% end %>

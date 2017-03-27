@@ -1,0 +1,14 @@
+<% if @messages.length > 0 %>
+    <% @messages.each do |message| %>
+        <div class="col-md-4">
+            <div class="message">
+                <h2 class="message-title"><%= message.title %></h2>
+                <%= link_to "View Message", message_path(message), class: "btn btn-default" %>
+            </div>
+        </div>
+    <% end %>
+<% else %>
+  <div name="no_messages_are_currently_present_text" class="col-md-12">
+      Click the "New Message" button in the upper-right corner to add a new post to the message board.
+  </div>
+<% end %>
