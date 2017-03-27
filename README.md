@@ -35,7 +35,10 @@ problem might be.
 
 # Running
 
-0) Install ruby and rails, if they are not yet installed
+0) You may need one or more of the following, if they are not installed
+
+* ruby, rails, gcc, nodejs, make, sqlite, sqlite-devel, zlib-devel
+* redhat-rpm-config (only relevant to Fedora)
 
 1) Clone the repo using git
 
