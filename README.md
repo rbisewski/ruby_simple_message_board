@@ -37,7 +37,9 @@ problem might be.
 
 0) You may need one or more of the following, if they are not installed
 
-* ruby, rails, gcc, nodejs, make, sqlite, sqlite-devel, zlib-devel
+* ruby, rails, gcc, nodejs, make, sqlite, sqlite-devel
+* zlib, zlib-devel (only relevant to older Debian versions)
+* libsqlite3, libsqlite3-dev, zlib1g, zlib1g-dev (only relevant to Ubuntu)
 * redhat-rpm-config (only relevant to Fedora)
 
 1) Clone the repo using git
