@@ -1,7 +1,10 @@
 # Simple Ruby Message Board - A web message board using ruby-on-rails
 
-This is a simple application that demonstrates a message board design with
-the following features:
+A plain and no-frills online message board, written using ruby-on-rails:
+
+![Ruby Message Board](ruby_message_board.png)
+
+Has the following features:
 
 * User Sign Up
 * Login and Logout
@@ -11,60 +14,39 @@ the following features:
 * Rspec Unit Tests
 * Capybara Feature Testing
 
-Written for ruby-on-rails, this uses devise to handle the user logins,
-simple_form for the forms, and rspec and capybara for the tests.
+Utilizes:
 
-# Requirements
+* `devise` to handle the user logins
+* `simple_form` for the forms
+* `rspec` for unit tests
+* `capybara` for feature tests
 
-Specifically, the following rubygems are required:
+# Setup
 
-* bootstrap-sass
-* devise 
-* capybara
-* rspec
-* simple_form 
-* spring 
+Run docker-compose to build and start a container instance of this app:
 
-Recommend running this on Linux as it has not been tested for other
-platforms. Specifically, it was created on a Fedora 25 image via docker.
+```bash
+docker-compose up -d
+```
 
-Feel free to email me if this does not appear to work on your platform,
-ideally with the error message in question or a strong idea of what the
-problem might be.
+Afterwards, navigate to the following:
 
+```
+http://localhost:3000
+```
 
-# Running
-
-0) You may need one or more of the following, if they are not installed
-
-* ruby, rails, gcc, nodejs, make, sqlite, sqlite-devel
-* zlib, zlib-devel (only relevant to older Debian versions)
-* libsqlite3, libsqlite3-dev, zlib1g, zlib1g-dev (only relevant to Ubuntu)
-* redhat-rpm-config (only relevant to Fedora)
-
-1) Clone the repo using git
-
-2) Gather the necessary gems
-
-bundle install
-
-3) Load the schema
-
-rake db:schema:load
-
-3) Run the application on rails
-
-rails s
-
-4) Run the rspec and capybara tests
-
-rake spec
-
+Then sign-in to create a new account and afterwards, login with that account to start posting messages.
 
 # Authors
 
 Written by Robert Bisewski at Ibis Cybernetics. For more information, contact:
 
-* Website -> www.ibiscybernetics.com
+```
+https://www.ibiscybernetics.com
+```
 
-* Email -> contact@ibiscybernetics.com
+Or send an email to:
+
+```
+contact@ibiscybernetics.com
+```

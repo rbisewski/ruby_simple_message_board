@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+gem 'tzinfo-data'
+
+gem 'mini_portile2', '2.1.0'
+gem 'rake', '12.0.0'
 gem 'rails', '4.1.8'
 gem 'sqlite3'
 gem 'sass-rails', '~> 4.0.3'
