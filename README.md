@@ -1,4 +1,4 @@
-# Simple Ruby Message Board - A web message board using ruby-on-rails
+# Simple Ruby Message Board
 
 A plain and no-frills online message board, written using ruby-on-rails:
 
